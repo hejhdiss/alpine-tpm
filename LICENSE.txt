@@ -1,0 +1,29 @@
+alpine-tpm.img – Modified Image for TPM Emulation with QEMU
+------------------------------------------------------------
+
+This image is based on:
+
+1. Alpine Linux 3.22
+   - Website: https://alpinelinux.org
+   - Source: https://gitlab.alpinelinux.org/alpine
+   - Alpine is a distribution of many open-source packages, primarily licensed
+     under the MIT, GPL, BSD, or Apache 2.0 licenses depending on the package.
+
+   See individual packages for specific license details:
+   https://pkgs.alpinelinux.org/packages
+
+2. swtpm – Software TPM emulator by Stefan Berger
+   - Project: https://github.com/stefanberger/swtpm
+   - License: BSD 3-Clause License
+     https://github.com/stefanberger/swtpm/blob/master/LICENSE
+
+Modifications in this image:
+- Configured swtpm to launch automatically on boot
+- Prepared for QEMU usage as part of the Thalunix project
+
+Modified by:
+Muhammed Shafin P (@hejhdiss)  
+https://github.com/hejhdiss/Thalunix
+
+This image is provided only for development and testing.  
+All original rights and licenses remain with their respective authors.
